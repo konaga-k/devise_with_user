@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resource :current_user, only: %i(edit update)
+  resources :users, only: %i(index)
 end
