@@ -1,0 +1,12 @@
+<h1>ユーザープロフィール編集</h1>
+
+<%= form_with url: '/current_user', model: @current_user, remote: false do |f| %>
+  <div>
+    <%= f.label 'パスワード' %>
+    <%= f.password_field :password %>
+  </div>
+
+  <div>
+    <%= f.submit '送信' %>
+  </div>
+<% end %>
